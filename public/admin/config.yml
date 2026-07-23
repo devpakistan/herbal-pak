@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+  branch: work
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "product"
+    label: "Product"
+    files:
+      - name: "main"
+        label: "Main Product Data"
+        file: "content/product.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "text" }
+          - { label: "Badge", name: "badge", widget: "string" }
+          - { label: "Currency", name: "currency", widget: "string" }
+          - { label: "Price", name: "price", widget: "number", value_type: "int" }
+          - { label: "Delivery Note", name: "deliveryNote", widget: "text" }
+          - { label: "Disclaimer", name: "disclaimer", widget: "text" }
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Benefits"
+            name: "benefits"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Ingredients"
+            name: "ingredients"
+            widget: "list"
+            field: { label: "Ingredient", name: "ingredient", widget: "string" }
+          - label: "Order Steps"
+            name: "orderSteps"
+            widget: "list"
+            field: { label: "Step", name: "step", widget: "string" }
+          - label: "Variants"
+            name: "variants"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "number", value_type: "int" }
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+          - label: "Options"
+            name: "options"
+            widget: "list"
+            fields:
+              - { label: "Key", name: "key", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Help Text", name: "helpText", widget: "text", required: false }
+              - { label: "Type", name: "type", widget: "select", options: ["radio", "checkbox"] }
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - label: "Values"
+                name: "values"
+                widget: "list"
+                field: { label: "Value", name: "value", widget: "string" }
