@@ -1,0 +1,75 @@
+{
+  "title": "Herbal Scalp Revival Oil",
+  "subtitle": "A gentle herbal hair-care formula made for people who want a cleaner-feeling scalp, less breakage, and healthier-looking hair with consistent use.",
+  "badge": "Herbal product • Decap CMS managed",
+  "currency": "USD",
+  "price": 24,
+  "deliveryNote": "Fast delivery available with cash on delivery support in select regions.",
+  "disclaimer": "This product is a cosmetic and personal-care item. It is not a medicine and does not claim to diagnose, treat, cure, or prevent hair loss or any other condition. Results may vary from person to person.",
+  "highlights": [
+    {
+      "label": "Scalp care",
+      "text": "Helps keep the scalp feeling nourished and refreshed after regular massage."
+    },
+    {
+      "label": "Hair feel",
+      "text": "Leaves hair softer, smoother, and easier to manage."
+    },
+    {
+      "label": "Everyday use",
+      "text": "Designed for simple weekly use in your home routine."
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Lightweight herbal blend",
+      "description": "Made with a carefully balanced blend that absorbs comfortably without feeling too heavy on the scalp."
+    },
+    {
+      "title": "Supports healthy-looking hair",
+      "description": "Created to improve the look and feel of hair while supporting a consistent self-care routine."
+    },
+    {
+      "title": "Easy at-home application",
+      "description": "Apply, massage, and leave in as directed for a practical care routine."
+    }
+  ],
+  "ingredients": ["Bhringraj extract", "Amla oil", "Brahmi infusion", "Fenugreek seed oil", "Coconut carrier oil"],
+  "orderSteps": [
+    "Choose a package if one is enabled in CMS.",
+    "Add the product to cart or save it for later.",
+    "Place your cash on delivery order."
+  ],
+  "variants": [
+    {
+      "label": "Single Bottle",
+      "description": "Best for first-time buyers who want to try the formula.",
+      "price": 24,
+      "enabled": true
+    },
+    {
+      "label": "Save Pack",
+      "description": "A value option for regular self-care routines.",
+      "price": 42,
+      "enabled": true
+    }
+  ],
+  "options": [
+    {
+      "key": "size",
+      "label": "Bottle size",
+      "helpText": "Visible only when enabled in Decap CMS.",
+      "type": "radio",
+      "enabled": true,
+      "values": ["50 ml", "100 ml"]
+    },
+    {
+      "key": "gift-wrap",
+      "label": "Gift wrap",
+      "helpText": "Optional wrapping for gifting.",
+      "type": "checkbox",
+      "enabled": false,
+      "values": ["Add gift wrap"]
+    }
+  ]
+}
